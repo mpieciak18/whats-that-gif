@@ -7,7 +7,9 @@
     }
     #image-overlay {
         font-size: xx-large;
-        top: 40%; 
+        -webkit-text-stroke: 2px black; /* stroke width and color */
+        color: white;
+        -webkit-font-smoothing: antialiased;
     }
     #image {
         max-width: 100vw;
@@ -19,7 +21,9 @@
     }
     #image-overlay {
         font-size: 40px;
-        top: 45%;
+        -webkit-text-stroke: 3px black; /* stroke width and color */
+        color: white;
+        -webkit-font-smoothing: antialiased;
     }
 }
 body {
@@ -55,10 +59,17 @@ body > * {
 }
 #image-overlay {
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-text-stroke: 3px black; /* stroke width and color */
-    color: white;
-    -webkit-font-smoothing: antialiased;
     font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    width: 100%;
+}
+#image-box {
+    position: relative;
+    display: inline-block;
+}
+#image {
+    display: block;
 }
