@@ -30,7 +30,4 @@ const searchGif = function(event) {
 const searchForm = document.getElementById('search-form');
 searchForm.addEventListener('submit', searchGif)
 
-// const randomButton = document.getElementById('random-button');
-// randomButton.addEventListener('click', () => {alert('success!')});
-
 fetchGif('doge');
